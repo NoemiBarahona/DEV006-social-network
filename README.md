@@ -28,10 +28,12 @@ Foodiegram es una aplicación móvil que te permite compartir y descubrir conten
 - **Firebase:** Plataforma de desarrollo de aplicaciones móviles y web de Google utilizada para la autenticación de usuarios y el almacenamiento de datos.
 - **SPA (Single Page Application):** FoodieGram sigue un enfoque de desarrollo de una sola página, lo que significa que toda la aplicación se carga en una única página y las interacciones ocurren de forma dinámica sin tener que recargar la página.
 
-## Prototipos
-- **Prototipo de baja fidelidad :** 
+## Prototipos baja fidelidad
+
 ![Captura de pantalla 2023-06-07 191154](https://github.com/Noemipurr/DEV006-social-network/assets/82232134/e89913d2-1639-4996-90d4-963d5975b538)
-- **Prototipo de alta fidelidad:** 
+
+## Prototipos alta fidelidad
+
 ![Captura de pantalla 2023-06-07 190952](https://github.com/Noemipurr/DEV006-social-network/assets/82232134/b9274aed-f33f-4403-a77e-36aae1c40c7f)
 ![Captura de pantalla 2023-06-07 191055](https://github.com/Noemipurr/DEV006-social-network/assets/82232134/c3f6adac-8fa3-4a0f-aea6-f4af3645b8b5)
 

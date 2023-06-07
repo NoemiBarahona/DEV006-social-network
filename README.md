@@ -31,3 +31,7 @@ Foodiegram es una aplicación móvil que te permite compartir y descubrir conten
 ## Notas legales
 
 Foodiegram es una aplicación desarrollada por Triada. Todos los derechos reservados.
+
+![Captura de pantalla 2023-06-07 190952](https://github.com/Noemipurr/DEV006-social-network/assets/82232134/b9274aed-f33f-4403-a77e-36aae1c40c7f)
+![Captura de pantalla 2023-06-07 191055](https://github.com/Noemipurr/DEV006-social-network/assets/82232134/c3f6adac-8fa3-4a0f-aea6-f4af3645b8b5)
+![Captura de pantalla 2023-06-07 191154](https://github.com/Noemipurr/DEV006-social-network/assets/82232134/e89913d2-1639-4996-90d4-963d5975b538)

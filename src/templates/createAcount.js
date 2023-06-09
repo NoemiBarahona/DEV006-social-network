@@ -2,6 +2,8 @@
 /* eslint-disable no-console */
 // import { createUserWithEmailAndPassword } from 'firebase/auth';
 import { auth, create } from '../lib/firebase.js';
+import logoFoodiegram from '../img/logoSinfondo.png';
+import retornar from '../img/arrow.png';
 
 function createAcount(navigateTo) {
   const section = document.createElement('section');
@@ -19,13 +21,13 @@ function createAcount(navigateTo) {
   const buttonSingUp = document.createElement('button');
   const buttonReturn = document.createElement('button');
 
-  logo.src = './img/logoSinfondo.png';
+  logo.src = logoFoodiegram;
   logo.classList.add('logoimg');
 
   caption.textContent = 'Create Acount';
   caption.classList.add('caption');
 
-  backgroundCreate.classList.add('backgroundCreate')
+  backgroundCreate.classList.add('backgroundCreate');
 
   inputName.placeholder = 'Name';
   inputName.classList.add('nameCreateacount');
@@ -54,6 +56,7 @@ function createAcount(navigateTo) {
     navigateTo('/wall');
   });
 
+  buttonReturn.src = retornar;
   buttonReturn.textContent = '.';
   buttonReturn.classList.add('returnCreateAcount');
   buttonReturn.addEventListener('click', () => {

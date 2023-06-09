@@ -1,3 +1,5 @@
+import imagenComida from '../img/comidaSinFondo.png';
+
 function error(navigateTo) {
   const sectionerror = document.createElement('section');
   const imgcomida = document.createElement('img');
@@ -10,7 +12,7 @@ function error(navigateTo) {
     navigateTo('/wall');
   });
 
-  imgcomida.src = './img/comidaSinFondo.png';
+  imgcomida.src = imagenComida;
   imgcomida.classList.add('img-comida');
 
   textoerror.textContent = 'oops! Looks like you got lost in the alphabet soup. But dont worry,we are here to help you find the right path.';

@@ -2,6 +2,7 @@
 /* eslint-disable no-console */
 import { saveTask, updateTask } from '../lib/firebase.js';
 // import { ref } from 'firebase/storage';
+import retornar from '../img/arrow.png';
 
 function newPost(navigateTo, data) {
   console.log(data);
@@ -88,6 +89,7 @@ function newPost(navigateTo, data) {
   textAreaReview.classList.add('textAreaReview');
   textAreaReview.textContent = data.post ? data.post.description : '';
 
+  buttonReturn.src = retornar;
   buttonReturn.textContent = '.';
   buttonReturn.classList.add('returnNewPost');
   buttonReturn.addEventListener('click', () => {

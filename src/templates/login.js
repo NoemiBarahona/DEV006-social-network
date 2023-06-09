@@ -5,11 +5,12 @@ import { signInWithEmailAndPassword } from 'firebase/auth';
 // eslint-disable-next-line import/no-duplicates
 import { GoogleAuthProvider, signInWithPopup } from 'firebase/auth';
 import { auth } from '../lib/firebase';
+import logoFoodiegram from '../img/logoSinfondo.png';
 
 function login(navigateTo) {
   const section = document.createElement('section');
   const logo = document.createElement('img');
-  const logoGoogle = document.createElement('img');
+  // const logoGoogle = document.createElement('img');
   const title = document.createElement('h1');
   const backgroundLogin = document.createElement('div');
   const form = document.createElement('div');
@@ -22,7 +23,7 @@ function login(navigateTo) {
   const paragraphRegister = document.createElement('p');
   const alertEmail = document.createElement('p');
   const alertPass = document.createElement('p');
-  const footer = document.createElement('footer')
+  const footer = document.createElement('footer');
 
   section.classList.add('sectionLogin');
 
@@ -31,11 +32,11 @@ function login(navigateTo) {
 
   alertEmail.classList.add('alertEmail');
   alertPass.classList.add('alertPass');
-  form.classList.add('divLogin')
+  form.classList.add('divLogin');
 
   backgroundLogin.classList.add('backgroundLogin');
 
-  logo.src = './img/logoSinfondo.png';
+  logo.src = logoFoodiegram;
   logo.classList.add('logoimg');
 
   title.textContent = 'Welcome to Foodiegram';

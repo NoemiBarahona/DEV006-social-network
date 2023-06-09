@@ -10,6 +10,13 @@ import {
   signOutUser,
 } from '../lib/firebase.js';
 
+import iconoAgregarPost from '../img/iconoAgregar.png';
+import exitPag from '../img/exit(1).png';
+import likeCorazon from '../img/like.png';
+import likeSinCorazon from '../img/like(1).png';
+import editar from '../img/edit.png';
+import eliminar from '../img/trash.png';
+
 function wall(navigateTo) {
   const divWall = document.createElement('div');
   divWall.classList.add('divWall');
@@ -21,7 +28,7 @@ function wall(navigateTo) {
   postContenedor.setAttribute('id', 'postContenedor');
   postContenedor.classList.add('postContenedor');
 
-  exit.src = './img/exit(1).png';
+  exit.src = exitPag;
   exit.classList.add('exit');
 
   exit.addEventListener('click', (e) => {
@@ -32,7 +39,7 @@ function wall(navigateTo) {
       });
   });
 
-  iconoAgregar.src = './img/iconoAgregar.png';
+  iconoAgregar.src = iconoAgregarPost;
   iconoAgregar.classList.add('iconoAgregar');
   iconoAgregar.addEventListener('click', () => {
     navigateTo('/newpost');
@@ -63,12 +70,12 @@ function wall(navigateTo) {
           </div>
               <div id='editDelete'>
                 ${post.likes.includes(auth.currentUser.uid) ? `
-                <img class='btn-like' data-id='${doc.id}' data-liked='${post.likes.includes(auth.currentUser.uid)}' src='./img/like.png' alt='like' />` : `<img class='btn-like' data-id='${doc.id}' 
-                data-liked='${post.likes.includes(auth.currentUser.uid)}' src='./img/like(1).png' alt='like' />`}
+                <img class='btn-like' data-id='${doc.id}' data-liked='${post.likes.includes(auth.currentUser.uid)}' src = ${likeCorazon} alt='like' />` : `<img class='btn-like' data-id='${doc.id}' 
+                data-liked='${post.likes.includes(auth.currentUser.uid)}' src= ${likeSinCorazon} alt='like' />`}
                 <span class='count-like'>${post.likes.length || ''}</span>
                 <div id='acciones'${isCurrentUser === auth.currentUser.uid ? '' : ' class="hidden"'}> 
-                <img class='deleteButton' data-id='${doc.id}' data-uid='${post.userid}' src='./img/trash.png' alt='trash'/>
-                <img class='editButton' data-id='${doc.id}' data-uid='${post.userid}' src='./img/edit.png' alt='edit'/>
+                <img class='deleteButton' data-id='${doc.id}' data-uid='${post.userid}' src= ${eliminar} alt='trash'/>
+                <img class='editButton' data-id='${doc.id}' data-uid='${post.userid}' src= ${editar} alt='edit'/>
               </div>
           </div>
 
